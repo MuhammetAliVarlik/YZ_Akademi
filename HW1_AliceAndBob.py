@@ -13,9 +13,9 @@ b= bob's
 def triplet(a, b, n):
     if n != len(a) or n != len(b):
         if a[n] > b[n]:
-            points[0] = +1  # alice gets a point
+            points[0] += 1  # alice gets a point
         elif a[n] < b[n]:
-            points[1] = +1  # bob gets a point
+            points[1] += 1  # bob gets a point
         triplet(a, b, n + 1)
 
 
