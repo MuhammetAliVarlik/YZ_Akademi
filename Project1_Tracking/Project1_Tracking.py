@@ -1,4 +1,5 @@
 # pip install youtube-dl==2020.12.2
+# pip install pafy
 import cv2
 import pafy
 import sys
