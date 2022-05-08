@@ -168,3 +168,5 @@ except cv2.error:
     print("Exited the video")
 else:
     print("Error!!Please try again")
+
+# CSRT was more successful because we worked at low fps values
