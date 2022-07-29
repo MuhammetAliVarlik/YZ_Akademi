@@ -170,6 +170,25 @@ def RDP_Result(coordinates, image, min_arc_length):
         newImage[coordinates[c][0]][coordinates[c][1]][1] = 0
         newImage[coordinates[c][0]][coordinates[c][1]][2] = 255
         newImage[coordinates[c][0]][coordinates[c][1]][3] = 255
+    newImage[coordinatesX[0][0]][coordinatesX[0][1]][0] = 0
+    newImage[coordinatesX[0][0]][coordinatesX[0][1]][1] = 255
+    newImage[coordinatesX[0][0]][coordinatesX[0][1]][2] = 0
+    newImage[coordinatesX[0][0]][coordinatesX[0][1]][3] = 255
+
+    newImage[coordinatesX[-1][0]][coordinatesX[-1][1]][0] = 0
+    newImage[coordinatesX[-1][0]][coordinatesX[-1][1]][1] = 255
+    newImage[coordinatesX[-1][0]][coordinatesX[-1][1]][2] = 0
+    newImage[coordinatesX[-1][0]][coordinatesX[-1][1]][3] = 255
+
+    newImage[coordinatesY[0][0]][coordinatesY[0][1]][0] = 255
+    newImage[coordinatesY[0][0]][coordinatesY[0][1]][1] = 0
+    newImage[coordinatesY[0][0]][coordinatesY[0][1]][2] = 0
+    newImage[coordinatesY[0][0]][coordinatesY[0][1]][3] = 255
+
+    newImage[coordinatesY[-1][0]][coordinatesY[-1][1]][0] = 255
+    newImage[coordinatesY[-1][0]][coordinatesY[-1][1]][1] = 0
+    newImage[coordinatesY[-1][0]][coordinatesY[-1][1]][2] = 0
+    newImage[coordinatesY[-1][0]][coordinatesY[-1][1]][3] = 255
     print(a)
     # print(len(coordinates))
     return newImage
@@ -278,7 +297,7 @@ gray = RGB2GRAY(img)
 thresh = threshold(gray, 0.38 * 255)
 canny = edgeDetection(thresh)
 point_list = []
-eps = 50
+eps = 80
 
 getCoordinatesY(canny)
 getCoordinatesX(canny)
@@ -291,7 +310,7 @@ arc = 0
 # To plot the RDP result
 result1 = RDP_Result(rdp1, thresh, arc)
 
-f = plt.figure()
+"""f = plt.figure()
 f.add_subplot(2, 2, 1)
 plt.imshow(gray)
 f.add_subplot(2, 2, 2)
@@ -299,6 +318,7 @@ plt.imshow(thresh)
 f.add_subplot(2, 2, 3)
 plt.imshow(canny)
 f.add_subplot(2, 2, 4)
+plt.imshow(result1)"""
 plt.imshow(result1)
 plt.show(block=True)
 plt.show()
