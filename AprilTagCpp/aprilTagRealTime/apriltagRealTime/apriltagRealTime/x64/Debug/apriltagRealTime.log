@@ -1,0 +1,5 @@
+﻿  apriltagRealTime.cpp
+C:\Users\Administrator\PycharmProjects\Hope\YZ_Akademi\YZ_Akademi\AprilTagCpp\aprilTagRealTime\apriltagRealTime\apriltagRealTime\apriltagRealTime.cpp(26,30): warning C4305: 'başlatılıyor': 'double' iken 'float' olarak kesildi
+C:\Users\Administrator\PycharmProjects\Hope\YZ_Akademi\YZ_Akademi\AprilTagCpp\aprilTagRealTime\apriltagRealTime\apriltagRealTime\apriltagRealTime.cpp(81,123): warning C4244: 'bağımsız değişken': 'double' - 'int' dönüşümü; veri kaybı olabilir
+C:\Users\Administrator\PycharmProjects\Hope\YZ_Akademi\YZ_Akademi\AprilTagCpp\aprilTagRealTime\apriltagRealTime\apriltagRealTime\apriltagRealTime.cpp(82,114): warning C4244: 'bağımsız değişken': 'double' - 'int' dönüşümü; veri kaybı olabilir
+  apriltagRealTime.vcxproj -> C:\Users\Administrator\PycharmProjects\Hope\YZ_Akademi\YZ_Akademi\AprilTagCpp\aprilTagRealTime\apriltagRealTime\x64\Debug\apriltagRealTime.exe
